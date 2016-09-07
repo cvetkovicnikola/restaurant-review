@@ -21,7 +21,6 @@ public class Test {
 		//  2. classify using UNIGRAMS and BIGRAMS
 		//  3. classify using BIGRAMS
 		//  4. classify using STOPWORDS removal
-		//  5. classify using UNIGRAMS and BIGRAMS combined with STOPWORDS removal
 		
 		NaiveBayesClassifier nbClassifier = new NaiveBayesClassifier(2);
 //		J48Classifier jClassifier = new J48Classifier(2);

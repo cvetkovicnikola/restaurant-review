@@ -43,9 +43,6 @@ public class NaiveBayesClassifier extends SentimentClassifier {
 		case 4:
 			saveResults("NaiveBayes_stopwords.txt", getResults(eval));
 			break;
-		case 5:
-			saveResults("NaiveBayes_combo.txt", getResults(eval));
-			break;
 		default:
 			System.out.println("Wrong options input!");
 			break;

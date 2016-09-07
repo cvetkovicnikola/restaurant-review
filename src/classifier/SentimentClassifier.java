@@ -57,10 +57,6 @@ abstract public class SentimentClassifier {
 			tokenizer.setNGramMinSize(2); 
 			tokenizer.setNGramMaxSize(2); 
 			break;
-		case 5:
-			tokenizer.setNGramMinSize(1); 
-			tokenizer.setNGramMaxSize(2); 
-			break;
 		default:
 			break;
 		}

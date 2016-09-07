@@ -43,9 +43,6 @@ public class J48Classifier extends SentimentClassifier {
 		case 4:
 			saveResults("J48_stopwords.txt", getResults(eval));
 			break;
-		case 5:
-			saveResults("J48_combo.txt", getResults(eval));
-			break;
 		default:
 			System.out.println("Wrong options input!");
 			break;
