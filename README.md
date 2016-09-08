@@ -45,4 +45,12 @@ some kind of quality metric, like Information Gain. Using Ranker algorithm for s
 ![Alt text](/images/AttributeSelection.png?raw=true "AttributeSelection filter!")
 #4. Results
 
+For each of classification methods results are saved in different file. In order to have more accurate results we used 10 folds cross-validation for model evaluation. The results for all of the 8 variations are shown below.
+
+![Alt text](/images/results.png?raw=true "Classifiers results!")
+
+According to the results, for NaiveBayes classifier using unigrams and bigrams together gave very good results as like as using stopwords removal. For J48 classifier results are very similar. Best result is for unigrams and bigrams use because it has lowest errors.
+
 #5. Conclusion
+
+Based on the previously displayed, we can conclude that for this type of text mining best results are given when using Unigrams and bigrams extraction algorithm. However, as the stopwords removal alogrithm gives similar results, for some future research these two algorithms should be combined and the most appropriate stopwords list should be found for the classifier improvement. 
