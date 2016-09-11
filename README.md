@@ -1,18 +1,18 @@
 #1. About the project
 
-The main goal of this project is to build a binary classifier which will be used for restaurant reviews classification, based on the exposed sentiment (positive, negative). For building the classificator we have used marked dataset from Yelp Academic Dataset. 
+The main goal of this project is to build a binary classifier which will be used for restaurant reviews classification, based on the exposed sentiment (positive, negative). For building the classificator we have used marked dataset from ["Yelp Academic Dataset"](https://www.yelp.com/dataset_challenge/dataset). 
 Java language is used for programming with Weka framework, and for classification, Naive Bayes and J48 classificators are used.
 Results are compared in order to find which method is the most accurate.
 
 #2. Dataset
 
-For this project we have used the Yelp dataset (reviews.json). The most important attribute in the dataset is the attribute 'stars' that shows the rating of a restoraunt in the specific review (values from 1 to 5 ). This attribute is used for creating the dataset used in this project. All review instances that have attribute 'stars' with values 4 or 5 are marked as positive, instances with value 1 or 2 for this attribute are marked as negative. The reviews with 3 stars are ignored. The reviews are saved to reviewsDataset.arff with the following attributes:
+For this project we have used the ["Yelp Dataset"](https://github.com/cvetkovicnikola/restaurant-review/blob/master/Source%20code/data/reviews.json). The most important attribute in the dataset is the attribute 'stars' that shows the rating of a restoraunt in the specific review (values from 1 to 5 ). This attribute is used for creating the dataset used in this project. All review instances that have attribute 'stars' with values 4 or 5 are marked as positive, instances with value 1 or 2 for this attribute are marked as negative. The reviews with 3 stars are ignored. The reviews are saved to reviewsDataset.arff with the following attributes:
 - **Review text**
 - **Sentiment (positive, negative)**
 - **No. votes useful**
 - **No. votes cool**
 
-There were total of 2000 review instances extracted and stored in the arff file.
+There were total of 2000 review instances extracted and stored in the ["reviewsDataset.arff"](https://github.com/cvetkovicnikola/restaurant-review/blob/master/Dataset/reviewsDataset.arff).
 
 Example of a review in the dataset is given in the Code Listing 1.
 ```
@@ -22,7 +22,7 @@ Code Listing 1 - Example of a review instance from the dataset
 
 #3. Technical realization
 
-This project uses Weka library. Weka is a collection of machine learning algorithms for data mining, that was founded at the Waikato University of New Zeland. All these algorithms can be used directly from code by importing weka.jar file or through the graphical interface called Weka Explorer. Weka contains tools for data preprocessing, classification, regression, clustering and visualization.
+This project uses [Weka library](http://www.cs.waikato.ac.nz/ml/weka/). Weka is a collection of machine learning algorithms for data mining, that was founded at the Waikato University of New Zeland. All these algorithms can be used directly from code by importing weka.jar file or through the graphical interface called Weka Explorer. Weka contains tools for data preprocessing, classification, regression, clustering and visualization.
 
 In this project, two Weka classes were used: *NaiveBayes* and *J48* for building classifiers. Each of the classifiers is used with four diferent feature extraction algorithms:
 - **Unigrams**
